@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Cool Wall</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<script>
+
+		function downloadImage(toDownload) {
+			switch (toDownload) {
+				case "groovy-gorilla-blue":
+					window.location.href = "./groovy-gorilla-blue.png";
+					break;
+				case "groovy-gorilla-purple":
+					window.location.href = "./groovy-gorilla-purple.jpeg";
+					break;
+				case "groovy-gorilla-custom":
+					window.location.href = "./groovy-gorilla-custom.png";
+					break;
+				default:
+					alert("Invalid image");
+
+			}
+		}
+	</script>
+
+<body>
+
+	<div class="container">
+		<h1>Just cool wallpapers</h1>
+		<main>
+			<div class="wall-container">
+				<div class="title-container">
+					<h3>Groovy Gorilla Blue</h3>
+					<span class="download" onclick="downloadImage('groovy-gorilla-blue')">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+							viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-download">
+							<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+							<polyline points="7 10 12 15 17 10" />
+							<line x1="12" x2="12" y1="15" y2="3" />
+						</svg>
+					</span>
+				</div>
+				<img src="./groovy-gorilla-blue.png" alt="" class="wall">
+			</div>
+			<div class="wall-container">
+				<div class="title-container">
+					<h3>Groovy Gorilla Purple</h3>
+					<span class="download" onclick="downloadImage('groovy-gorilla-purple')">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+							viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-download">
+							<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+							<polyline points="7 10 12 15 17 10" />
+							<line x1="12" x2="12" y1="15" y2="3" />
+						</svg>
+					</span>
+				</div>
+				<img src="./groovy-gorilla-purple.jpeg" alt="" class="wall">
+			</div>
+			<div class="wall-container">
+				<div class="title-container">
+					<h3>Groovy Gorilla Custom</h3>
+					<span class="download" onclick="downloadImage('groovy-gorilla-custom')">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+							viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-download">
+							<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+							<polyline points="7 10 12 15 17 10" />
+							<line x1="12" x2="12" y1="15" y2="3" />
+						</svg>
+					</span>
+				</div>
+				<img src="./groovy-gorilla-custom.png" alt="" class="wall">
+			</div>
+		</main>
+	</div>
+
+</body>
+
+</html>
